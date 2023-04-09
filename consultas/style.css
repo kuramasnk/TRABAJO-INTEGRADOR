@@ -7,13 +7,12 @@
 .piedepagina .grupo1 {
     width: 100%;
     max-width: 1200px;
-    height: 120px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
-    padding-top: 30px;
+ 
     
 
 }
@@ -69,7 +68,7 @@
     font-size: 15px;
 }
 @media screen and (max-width: 800px){
-    .piedepagina  {
+    .piedepagina .grupo1 {
         width: 90%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -79,7 +78,10 @@
     
     }
 }
-
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
 /*-------------------------------- pagina contacto------------------------------------------------------------ */
 
 .contacto1 {
