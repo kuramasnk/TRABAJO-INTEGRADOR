@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+<!-- ----------------------------pagina contacto ------------------------------------------------------------------ -->
+    <div class="contacto1">
+        <div class="caja1">
+            <ul class="lista">
+                <li><i class='fa fa-map'></i> <b>Nuestra Ubicación</b>
+                    <p>Avenida Santa Fe 350 3°piso</p>
+                </li>
+                <li><i class='fa fa-phone-square'></i> <b>Nuestro telefóno</b>
+                    <p>111-222-3333</p>
+                </li>
+                <li> <i class='fa fa-envelope-square'></i> <b>Correo electrónico</b>
+                    <p>twogruop@gmail.com</p>
+                </li>
+                <li><i class='fa fa-clock'></i> <b>Horarios de atención en Oficina</b>
+                    <p>Lunes a viernes de 8 a 16 horas</p>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="caja2">
+            <form action="#" class="contacto2">
+            
+                <h2>Comuníquese con nosotros</h2>
+                <p>Nombre</p>
+                 <input placeholder="Ingrese su nombre" type="Ingrese su nombre" size =50px id="nombre">
+                <p>Dirección de Correo</p>
+                <input type="dirección de correo" placeholder="Dirección de correo"size =50px id="correo">
+                <p>Telefóno</p>
+                <input type="Teléfono" placeholder="Telefóno"size =50px id="telefono">
+                <p>Consulta</p>
+                <input type="Ingrese su consulta" placeholder="Ingrese su consulta"size =50px id="consulta">
+                <p></p>
+                <button onclick="guardarcontacto()">Enviar Mensaje</button>
+                <div id="guardado" style="display: none;">La consulta fue enviada</div>
+            </form>
+            
+        </div>
+
+        <div class="caja3">
+            <div id="map"></div>
+             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+    
+        </div>
+
+    </div>
+
+
+
+<!-- ----------------------------------------footer------------------------------------------------------------ -->
+
+    <footer class="piedepagina">
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <img src="https://i.postimg.cc/gjQSkvnP/TWO-GROUP-LOGO.png" class="responsive" alt="logo inmobiliaria"   />
+                </figure>
+            </div>
+            <div class="box">
+                <h3>SOBRE NOSOTROS</h3>
+                <div class="enlaces">
+                    <a href="">Quienes somos</a>
+                    <a href="">Contacto</a>
+                    <a href="">Servicio</a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>NUESTRAS REDES</h3>
+                <div class="redsocial">
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-twitter"></a>
+                    <a href="#" class="fa-brands fa-instagram"></a>
+                    <a href="#" class="fa-brands fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2023 <b>Two Group Propiedades</b> - Todos los derechos reservados</small>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
