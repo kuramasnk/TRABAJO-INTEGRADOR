@@ -3,7 +3,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-/* ********* Bootstrap Styles*********** bg-body-tertiary*/
+/* ********* Bootstrap Styles********** */
 
 .navbar-brand img {
   width: auto;
@@ -37,6 +37,19 @@ body {
   color: #687fcb;
   font-weight: bold;
   font-size: 1rem;
+}
+
+/* ************************** Styles main*********************************** */
+
+.gradiente-grey-blue{
+  background-color:grey;
+  background-image: linear-gradient(
+    45deg,
+    #646470
+    #687fcb,
+    
+  );
+  background-image: linear-gradient(45deg, #687fCB, #6A799C) ;
 }
 
 /* X-Small devices (portrait phones, less than 576px)
