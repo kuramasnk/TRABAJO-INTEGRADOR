@@ -4,8 +4,7 @@ body {
 }
 
 /* ********* Bootstrap Styles*********** bg-body-tertiary*/
-.navbar-nav:hover {
-}
+
 .navbar-brand img {
   width: auto;
   height: 3rem;
@@ -32,13 +31,14 @@ body {
   background-color: #687fcb80;
 }
 .nav-link:hover {
-  color: var(--bs-white);
+  color: #afafb9c9;
 }
 .nav-link {
   color: #687fcb;
   font-weight: bold;
   font-size: 1rem;
 }
+
 /* X-Small devices (portrait phones, less than 576px)
  No media query for `xs` since this is the default in Bootstrap*/
 
@@ -52,6 +52,9 @@ body {
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+  .nav-item:hover {
+    background-color: transparent;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
