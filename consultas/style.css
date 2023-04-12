@@ -22,7 +22,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 0px;    
+    padding-top: 0px;  
+    padding-left: 10px;  
   
 }
 
@@ -34,14 +35,17 @@
     color: #fdfdfd;
     margin-bottom: 15px;
     margin-top: 10px;
-    font-size: 20 px;
-    padding-left: 30px;
+    font-size: 18px;
+    text-align: center;
+    font-weight:500;
+
 }
 .piedepagina .grupo1 .box .enlaces a{
     color: #fdfdfd;
     margin-bottom: 2px;
     display:flex;
     padding-left: 50px;
+    font-size: 14px;
 
 }
 .piedepagina .grupo1 .box .redsocial {
@@ -64,7 +68,7 @@
 .piedepagina .grupo2 {
     background-color: #232327;
     padding: 15px 10 px;
-    text-align: center;
+    justify-content: center;
     color: #fff;
     display: flex;
 }
