@@ -86,7 +86,7 @@ font-size: 25px;
   padding: 205px;
 }
 
-.container {
+.container-social {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
