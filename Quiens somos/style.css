@@ -145,12 +145,12 @@ font-size: 25px;
   }
   
   
-  .social {
+  .network {
     margin-top: 10px;
     text-align: center;
   }
   
-  .social a {
+  .network a {
     display: inline-block;
     margin-right: 10px;
     color: rgb(248, 247, 247);
@@ -159,7 +159,7 @@ font-size: 25px;
     border-radius: 50%;
   }
   
-  .social a:hover {
+  .network a:hover {
     background-color: #666;
   }
   
