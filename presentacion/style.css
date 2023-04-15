@@ -39,7 +39,7 @@ body {
 }
 
 .container-titulo h1{
-padding: 75px;
+  padding: 25px;
   margin: 35px;
   text-align: center;
   font-size: 35px;
@@ -52,11 +52,10 @@ font-size: 25px;
 }
 
 .container-gallery {
-  background-color: #f1f1f1;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+
   
 }
 
@@ -156,7 +155,7 @@ padding: 205px;
   color: rgb(248, 247, 247);
   background-color: #687fcb;
   padding: 10px;
-  border-radius: 50%;
+  border-radius:5px
 }
 
 .network a:hover {
