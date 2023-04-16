@@ -1,6 +1,6 @@
 body {
   font-family: "Raleway", sans-serif;
-  background-color: #f2e0cb;
+  background-color: #c0cbed;
   margin: 0;
 }
 
@@ -13,27 +13,33 @@ body {
   background-size: cover;
   position: relative;
   overflow: hidden;
-  color: white;
+  color:white;
   text-align: center;
 }
 
 .encabezado .textos {
   margin-top: 252px;
+
+  
 }
 
 .encabezado .titulo {
   font-size: 85px;
+  text-shadow: black 5px 2px 15px;
 }
 
 .encabezado .subtitulo {
   font-size: 42px;
   font-weight: 300;
-  margin-bottom: 32px;
+  text-align: center;
+  margin: 125px;
+  text-shadow: black 5px 2px 15px;
 }
 
 .container-titulo{
-  background-color: #f2e0cb;
+  background-color: #c0cbed;
   padding: 15px;
+  
 
   
 }
@@ -43,12 +49,14 @@ body {
   margin: 35px;
   text-align: center;
   font-size: 35px;
+  font-weight: bold;
 }
 
 .container-titulo p{
-margin: 5px;
+margin: 110px;
 text-align: center;
 font-size: 25px;
+
 }
 
 .container-gallery {
@@ -60,10 +68,11 @@ font-size: 25px;
 }
 
 .gallery{
-  width: 85vw;
+  width: 1650px;
   height: 60vmin;
   display: flex;
   gap: 5px;
+  
 }
 
 .gallery img{
@@ -73,16 +82,19 @@ font-size: 25px;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s;
+  border-radius: 15px;
 }
 
 .gallery img:hover{
   flex: 4;
 }
 
-.presentacion{
+.presentacion h1{
 align-items: center;
 text-align: center;
+font-size: 35px;
 padding: 205px;
+font-weight: bold;
 }
 
 .container-social {
@@ -93,7 +105,7 @@ padding: 205px;
 
 
 .card-container {
-  margin: 20px;
+  margin: 17px;
   width: 300px;
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
@@ -121,6 +133,7 @@ padding: 205px;
   margin-top: 0;
   font-size: 24px;
   font-weight: bold;
+  
 }
 
 .grupo h4 {
@@ -150,18 +163,16 @@ padding: 205px;
 }
 
 .network a {
+  font-size: 27px;
   display: inline-block;
   margin-right: 10px;
-  color: rgb(248, 247, 247);
-  background-color: #687fcb;
+  color: #0656ce;
   padding: 10px;
-  border-radius:5px
+  border-radius:5px;
 }
 
-.network a:hover {
-  background-color: #666;
-}
 
-.comentariofinal{
+.comentariofinal h1{
+font-weight: bold;
 padding: 155px;
 }
