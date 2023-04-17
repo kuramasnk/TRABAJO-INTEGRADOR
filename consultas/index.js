@@ -15,6 +15,10 @@ const enviarconsulta = () => {
       consulta
   );
   mostrardiv("guardado");
+   document.getElementById("nombre").value="";
+   document.getElementById("correo").value="";
+   document.getElementById("telefono").value="";
+   document.getElementById("consulta").value="";
 };
 const mostrardiv = (id) => {
   document.getElementById(id).style.display = "block";
