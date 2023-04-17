@@ -25,10 +25,12 @@ function iniciarMap() {
 
 /*---------------------------------- validacion j query ---------------------------------------------------------*/
 
-$(document).ready(function() {
+/* $(document).ready(function() {
   $("#formulariocontacto").validate({
     submitHandler: function(form) {
       enviarconsulta();
     }
   });
-});
+}); */
+
+/*---------------------------------- validate.js ---------------------------------------------------------*/
