@@ -23,7 +23,8 @@
     justify-content: center;
     align-items: center;
     padding-top: 0px;  
-    padding-left: 10px;  
+    padding-left: 10px; 
+    padding-right:50px ; 
   
 }
 
@@ -40,12 +41,16 @@
     font-weight:500;
 
 }
+.piedepagina .grupo1 .box .enlaces {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
 .piedepagina .grupo1 .box .enlaces a{
     color: #fdfdfd;
     margin-bottom: 2px;
-    display:flex;
-    padding-left: 50px;
     font-size: 14px;
+    text-align: center;
 
 }
 .piedepagina .grupo1 .box .redsocial {
@@ -93,14 +98,14 @@
 /*-------------------------------- pagina contacto------------------------------------------------------------ */
 
 .contacto1 {
-    background-color: #f7f5f5;
+    background-color: #80808050 ;
     width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50 px;
     padding: 80px 0px;
-    min-height: 82vh;
+    min-height: calc(100vh - 165.238px);
     
 }
 .caja1 {
@@ -117,6 +122,8 @@
     width: 100%;
     margin-left: 20px;
     margin-right: 20px;
+    min-height: 90%;
+    
 }
 .caja2 {
     width: 100%;
@@ -124,11 +131,14 @@
     display: flex;
     justify-content:center;
     align-items: center;
-    background-color: #fff; 
+    /* background-color: #fff;  */
     padding-left: 20px;
     padding-right: 20px;
     border: solid #687fcb;
     border-radius: 15px;
+    padding-top: 30px;
+    background-color: #e6e6e6;
+
    
  
 
@@ -136,8 +146,7 @@
 .caja2 h4 {
     text-align: center;
     font-weight: bold;
-    padding-top: 20px;
-   
+    padding-top: 20px; 
 }
 .caja2 .obligatorios{
     color: red;
@@ -156,6 +165,45 @@
     width: 100%;
     margin-bottom: 10px;
 }
+.submit {
+    position: relative;
+    background-color: #687fcb;
+    border: none;
+    font-size: 19px;
+    color: #FFFFFF;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .submit:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .submit:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  .centrarboton {
+    display: flex;
+    justify-content: center;
+  }
+
 .caja3 {
     justify-content: center;
     display: flex;
@@ -165,6 +213,8 @@
 	width: 90%;
     margin-left: 10px;
     margin-right: 10px;
+    border: solid #687fcb;
+    border-radius: 15px;
    
 }
 
@@ -176,6 +226,16 @@
         grid-gap: 30px;
         padding: 35px 0px;
 
+    }
+}
+@media screen and (min-width: 2100px){
+    .contacto1 {
+        font-size: 200%;
+    
+    }
+
+    .caja2 h4 {
+        font-size: 150%;
     }
 }
 /* -----------------------------------------header------------------------------------------------------------------- */
