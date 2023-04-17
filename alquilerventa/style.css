@@ -3,15 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-
-.container-casas{
-    background-color: #f5f3f3;
-    
     
 }
+
+
+
 h1{
     text-align: center;
     padding: 45px;
@@ -37,17 +33,14 @@ h1{
     grid-template-columns: repeat(auto-fit,minmax(280px,288px));
     padding-bottom: 50px;
     background: 50%;
+   
 }
 .items{
-    background-color: #f1f1f1; 
-    border: solid thin #e1e1e1;  
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     border-radius: 20px;
+
 }
 
 .items img{
-    
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -57,6 +50,12 @@ h1{
 
 .info{
     padding: 15px;
+    background-image: url(https://i.postimg.cc/PrWDmNqW/9850.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
     
 }
 
@@ -81,7 +80,7 @@ h1{
 .info button{
     padding: 1rem;
     width: 100%;
-    background-color: rgb(85, 82, 235);
+    background-color: #6a7ebd;
     border: none;
     outline: none;
     color: #fff;
