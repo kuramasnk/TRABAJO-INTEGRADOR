@@ -36,11 +36,8 @@ body {
 }
 
 .container-titulo{
-  
   padding: 15px;
-  
 
-  
 }
 
 .container-titulo h1{
@@ -88,6 +85,10 @@ font-size: 25px;
   flex: 4;
 }
 
+.presentacion{
+  background-color: #f1f1f1;
+  padding: 5px;
+}
 .presentacion h1{
 align-items: center;
 text-align: center;
@@ -96,7 +97,53 @@ padding: 95px;
 font-weight: bold;
 }
 
+/* Estilos para dispositivos con ancho de pantalla mayor a 768px */
+@media only screen and (min-width: 768px) {
+  .encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .container-gallery {
+    padding: 20px;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .gallery img {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .container-titulo {
+    padding: 20px;
+  }
+  
+  .container-titulo h1 {
+    font-size: 32px;
+  }
+  
+  .presentacion h1 {
+    font-size: 32px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .presentacion p {
+    font-size: 18px;
+    text-align: justify;
+    padding: 0 20px;
+  }
+}
+
 .container-social {
+  background-color: #f1f1f1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -122,8 +169,8 @@ font-weight: bold;
 }
 
 .grupo img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
@@ -175,4 +222,32 @@ font-weight: bold;
 .comentariofinal h1{
 font-weight: bold;
 padding: 155px;
+}
+
+
+@media (max-width: 767px) {
+
+  .container-social{
+max-width: 250px;
+  }
+  .card-container {
+    margin: 10px;
+    
+  }
+
+  .grupo img {
+    max-width: 150px;
+  }
+  
+  .grupo h2 {
+    font-size: 20px;
+  }
+  
+  .grupo h4 {
+    font-size: 16px;
+  }
+  
+  .descripcion p {
+    font-size: 14px;
+  }
 }
