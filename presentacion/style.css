@@ -97,50 +97,6 @@ padding: 95px;
 font-weight: bold;
 }
 
-/* Estilos para dispositivos con ancho de pantalla mayor a 768px */
-@media only screen and (min-width: 768px) {
-  .encabezado {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .container-gallery {
-    padding: 20px;
-  }
-  
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .gallery img {
-    width: calc(50% - 10px);
-    margin-bottom: 20px;
-  }
-  
-  .container-titulo {
-    padding: 20px;
-  }
-  
-  .container-titulo h1 {
-    font-size: 32px;
-  }
-  
-  .presentacion h1 {
-    font-size: 32px;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .presentacion p {
-    font-size: 18px;
-    text-align: justify;
-    padding: 0 20px;
-  }
-}
 
 .container-social {
   background-color: #f1f1f1;
@@ -163,7 +119,7 @@ font-weight: bold;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #f1f1f1;
+  background-color: white;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -191,7 +147,6 @@ font-weight: bold;
 
 .descripcion {
   padding: 10px;
-  background-color: #fff;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
