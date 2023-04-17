@@ -23,7 +23,8 @@
     justify-content: center;
     align-items: center;
     padding-top: 0px;  
-    padding-left: 10px;  
+    padding-left: 10px; 
+    padding-right:50px ; 
   
 }
 
@@ -97,7 +98,7 @@
 /*-------------------------------- pagina contacto------------------------------------------------------------ */
 
 .contacto1 {
-    background-color: #f7f5f5;
+    background-color: #80808050 ;
     width: 100%;
     margin: auto;
     display: grid;
@@ -122,6 +123,7 @@
     margin-left: 20px;
     margin-right: 20px;
     min-height: 90%;
+    
 }
 .caja2 {
     width: 100%;
@@ -129,11 +131,14 @@
     display: flex;
     justify-content:center;
     align-items: center;
-    background-color: #fff; 
+    /* background-color: #fff;  */
     padding-left: 20px;
     padding-right: 20px;
     border: solid #687fcb;
     border-radius: 15px;
+    padding-top: 30px;
+    background-color: #e6e6e6;
+
    
  
 
@@ -160,6 +165,45 @@
     width: 100%;
     margin-bottom: 10px;
 }
+.submit {
+    position: relative;
+    background-color: #687fcb;
+    border: none;
+    font-size: 19px;
+    color: #FFFFFF;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .submit:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .submit:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  .centrarboton {
+    display: flex;
+    justify-content: center;
+  }
+
 .caja3 {
     justify-content: center;
     display: flex;
@@ -169,6 +213,8 @@
 	width: 90%;
     margin-left: 10px;
     margin-right: 10px;
+    border: solid #687fcb;
+    border-radius: 15px;
    
 }
 
