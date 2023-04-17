@@ -1,0 +1,7 @@
+.row .form-step{
+    display: none;
+}
+
+.row .form-step-active{
+    display: flex;
+}
