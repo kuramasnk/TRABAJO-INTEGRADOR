@@ -1,7 +1,7 @@
 /* ********** RESET STYLES *********** */
 body {
   font-family: "Raleway", sans-serif;
-  background-color: grey;
+  background-color: rgba(183, 182, 182, 0.732);
 }
 
 /* ********* Bootstrap Styles********** */
@@ -64,7 +64,7 @@ body {
 /* ************************** Styles main*********************************** */
 
 .gradiente-grey-blue {
-  background-image: url(https://i.postimg.cc/PrH87yfM/image.jpg);
+  background-image: url(https://i.postimg.cc/T2C8SGv3/pexels-tbee-82256.jpg);
 
   background-position: center;
   background-repeat: no-repeat;
@@ -78,7 +78,7 @@ body {
 }
 .text_cards h3 {
   font-size: 3rem;
-  color: #f2e0cb;
+  color: white;
   text-shadow: 2px -2px 5px rgba(45, 45, 45, 0.878);
 }
 .contenedor_title_text {
@@ -93,11 +93,11 @@ body {
   align-items: center;
   justify-content: center;
   background: #687fcba8;
-  border: 3px solid rgba(179, 176, 176, 0.596);
+  border: 3px solid rgba(41, 40, 40, 0.706);
   width: 80%;
 }
 .title_text_ingresos {
-  color: rgba(179, 176, 176, 0.596);
+  color: rgb(41, 40, 40, 0.706);
 }
 .contenedor_title_text_pie {
   display: flex;
@@ -108,16 +108,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   border-radius: 10px;
-  align-items: center;
   justify-content: center;
-
-  border: 3px solid rgb(179, 176, 176);
+  text-align: center;
+  border: 3px solid rgb(41, 40, 40, 0.706);
+  background: #687fcba8;
   width: 50%;
-  padding-left: 80px;
 }
 .title_text_Servicios_pie {
   text-align: center;
-  color: grey;
+  color: rgb(41, 40, 40, 0.706);
 }
 /* *************** style Cards ************* */
 * {
@@ -131,9 +130,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
-  padding-bottom: 150px;
-  background: grey;
+  padding-bottom: 0px;
 }
 .carrusel .card {
   position: relative;
@@ -223,9 +220,26 @@ body {
 }
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .img-casa-portada {
+    display: none;
+  }
+  .text_cards h3 {
+    text-align: center;
+  }
+  .title_text_ingresos {
+    text-align: center;
+  }
+  .carousel {
+    margin-bottom: 0px;
+  }
+  .c-imag {
+    height: 100%;
+  }
+  .c-item {
+    height: auto;
+  }
 }
-
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   .nav-item:hover {
