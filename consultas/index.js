@@ -1,31 +1,39 @@
 /*----------------------------------- Funcion envio consulta --------------------------------------------*/
 const enviarconsulta = () => {
-  var nombre = document.getElementById("nombre").value
-  var correo = document.getElementById("correo").value
-  var telefono = document.getElementById("telefono").value
-  var consulta = document.getElementById("consulta").value
-  console.log("Consulta realizada por " + nombre + ",correo electrónico " + correo + ", teléfono " + telefono + ". CONSULTA: " + consulta)
-  mostrardiv("guardado")
-}
+  var nombre = document.getElementById("nombre").value;
+  var correo = document.getElementById("correo").value;
+  var telefono = document.getElementById("telefono").value;
+  var consulta = document.getElementById("consulta").value;
+  console.log(
+    "Consulta realizada por " +
+      nombre +
+      ",correo electrónico " +
+      correo +
+      ", teléfono " +
+      telefono +
+      ". CONSULTA: " +
+      consulta
+  );
+  mostrardiv("guardado");
+};
 const mostrardiv = (id) => {
-  document.getElementById(id).style.display = "block"
-}
-
+  document.getElementById(id).style.display = "block";
+};
 
 /* -----------------------------------------Google map -------------------------------------------------- */
 function iniciarMap() {
-  var coord = { lat: -34.595998, lng: -58.375530 };
-  var map = new google.maps.Map(document.getElementById('map'), {
+  var coord = { lat: -34.595998, lng: -58.37553 };
+  var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 15,
-    center: coord
+    center: coord,
   });
   var marker = new google.maps.Marker({
     position: coord,
-    map: map
+    map: map,
   });
 }
 
-/* -------------------------------- validacion con validate.js ----------------------------------*/
+/* -------------------------------- validación con validate.js ----------------------------------*/
 $(document).ready(function () {
   // Before using it we must add the parse and format functions
   // Here is a sample implementation using moment.js
@@ -39,7 +47,7 @@ $(document).ready(function () {
     format: function (value, options) {
       var format = options.dateOnly ? "YYYY-MM-DD" : "YYYY-MM-DD hh:mm:ss";
       return moment.utc(value).format(format);
-    }
+    },
   });
 
   // These are the constraints used to validate the form
@@ -49,38 +57,38 @@ $(document).ready(function () {
       length: {
         minimum: 3,
         maximum: 40,
-        message: "tiene que se un nombre"
+        message: "tiene que ser un nombre válido",
       },
       format: {
         pattern: "[A-Za-z ]+",
         flags: "i",
-        message: "puede contener sólo letras"
-      }
+        message: "puede contener sólo letras",
+      },
     },
     correo: {
       presence: { message: "es obligatorio" },
-      email: { message: "debe ser válido" }
+      email: { message: "debe ser válido" },
     },
     telefono: {
       presence: { message: "es obligatorio" },
       length: {
-        minimum: 3,
-        maximum: 400
+        minimum: 6,
+        maximum: 16,
       },
       format: {
         pattern: "[0-9 ()-]+",
         flags: "i",
-        message: "debe ser un número de teléfono válido"
-      }
+        message: "debe ser un número de teléfono válido",
+      },
     },
     consulta: {
       presence: { message: "es obligatorio" },
       length: {
         minimum: 3,
         maximum: 120,
-        message: "debe ser entre 3 y 120 caracteres"
-      }
-    }
+        message: "debe ser entre 3 y 120 caracteres",
+      },
+    },
   };
 
   // Hook up the form so we can prevent it from being posted
@@ -91,11 +99,11 @@ $(document).ready(function () {
   });
 
   // Hook up the inputs to validate on the fly
-  var inputs = document.querySelectorAll("input, textarea, select")
+  var inputs = document.querySelectorAll("input, textarea, select");
   for (var i = 0; i < inputs.length; ++i) {
     inputs.item(i).addEventListener("change", function (ev) {
       var errors = validate(form, constraints) || {};
-      showErrorsForInput(this, errors[this.name])
+      showErrorsForInput(this, errors[this.name]);
     });
   }
 
@@ -112,19 +120,22 @@ $(document).ready(function () {
   // Updates the inputs with the validation errors
   function showErrors(form, errors) {
     // We loop through all the inputs and show the errors for that input
-    _.each(form.querySelectorAll("input[name], select[name]"), function (input) {
-      // Since the errors can be null if no errors were found we need to handle
-      // that
-      showErrorsForInput(input, errors && errors[input.name]);
-    });
+    _.each(
+      form.querySelectorAll("input[name], select[name]"),
+      function (input) {
+        // Since the errors can be null if no errors were found we need to handle
+        // that
+        showErrorsForInput(input, errors && errors[input.name]);
+      }
+    );
   }
 
   // Shows the errors for a specific input
   function showErrorsForInput(input, errors) {
     // This is the root of the input
-    var formGroup = closestParent(input.parentNode, "form-li")
+    var formGroup = closestParent(input.parentNode, "form-li"),
       // Find where the error messages will be insert into
-      , messages = formGroup.querySelector(".messages");
+      messages = formGroup.querySelector(".messages");
     // First we remove any old messages and resets the classes
     resetFormGroup(formGroup);
     // If we have errors
@@ -178,5 +189,3 @@ $(document).ready(function () {
     enviarconsulta();
   }
 });
-
-
