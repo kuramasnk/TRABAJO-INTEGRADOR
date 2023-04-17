@@ -92,7 +92,7 @@ font-size: 25px;
 align-items: center;
 text-align: center;
 font-size: 35px;
-padding: 205px;
+padding: 95px;
 font-weight: bold;
 }
 
@@ -150,6 +150,7 @@ font-weight: bold;
 }
 
 .descripcion p {
+  text-align: center;
   margin-top: 0;
   font-size: 16px;
   line-height: 1.5;
@@ -162,10 +163,10 @@ font-weight: bold;
 }
 
 .network a {
-  font-size: 27px;
+  font-size: 30px;
   display: inline-block;
   margin-right: 10px;
-  color: #0656ce;
+  color: #6a7ebd;
   padding: 10px;
   border-radius:5px;
 }
