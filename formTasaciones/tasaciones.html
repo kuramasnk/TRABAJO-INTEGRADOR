@@ -90,9 +90,9 @@
                   </button>
                 </div>
               </div>
-              <div class="row form-step">
-                <div class="col-sm-6 mb-3">
-                  <label for="rdCasa" class="form-check-label">CASA</label>
+              <div class="row form-step radio-tile-group">
+                <div class="col-sm-6">
+				<div class="input-container">
                   <input
                     type="radio"
                     class="form-check-input"
@@ -100,11 +100,15 @@
                     name="rdTipoInmueble"
                     value="Casa"
                   />
+				  <div class="radio-tile">
+					<!-- icono -->
+					<ion-icon name="home-outline"></ion-icon>
+					<label for="rdCasa" class="form-check-label">CASA</label>
+				  </div>
                 </div>
-                <div class="col-sm-6 mb-3">
-                  <label for="rdDepto" class="form-check-label"
-                    >DEPARTAMENTO</label
-                  >
+				</div>
+                <div class="col-sm-6">
+				<div class="input-container">
                   <input
                     type="radio"
                     class="form-check-input"
@@ -112,9 +116,15 @@
                     name="rdTipoInmueble"
                     value="Departamento"
                   />
+                  <div class="radio-tile">
+					<!-- icono -->
+					<ion-icon name="business-outline"></ion-icon>
+					<label for="rdDepto" class="form-check-label">DEPTO</label>
+				  </div>
                 </div>
-                <div class="col-sm-6 mb-3">
-                  <label for="rdPh" class="form-check-label">PH</label>
+				</div>
+                <div class="col-sm-6">
+				<div class="input-container">
                   <input
                     type="radio"
                     class="form-check-input"
@@ -122,9 +132,15 @@
                     name="rdTipoInmueble"
                     value="PH"
                   />
+                  <div class="radio-tile">
+					<!-- icono -->
+					<ion-icon name="home"></ion-icon>
+					<label for="rdPh" class="form-check-label">PH</label>
+				  </div>
                 </div>
-                <div class="col-sm-6 mb-3">
-                  <label for="rdLocal" class="form-check-label">LOCAL</label>
+				</div>
+                <div class="col-sm-6">
+				<div class="input-container">
                   <input
                     type="radio"
                     class="form-check-input"
@@ -132,7 +148,13 @@
                     name="rdTipoInmueble"
                     value="Local"
                   />
+				  <div class="radio-tile">
+					<!-- icono -->
+					<ion-icon name="storefront-outline"></ion-icon>
+					<label for="rdLocal" class="form-check-label">LOCAL</label>
+				  </div>
                 </div>
+				</div>
                 <div class="invalid-feedback">Debe escoger un tipo de inmueble</div>
                 <div class="botonera d-flex justify-content-end">
                   <button type="button" class="btn btn-primary btn-prev">
@@ -286,6 +308,7 @@
         });
       })();
     </script>
-        
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

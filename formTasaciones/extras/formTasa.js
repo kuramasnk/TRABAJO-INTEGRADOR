@@ -16,6 +16,7 @@ listaPrevs.forEach((btn) => {
 
 listaSigs.forEach((btn) => {
   btn.addEventListener("click", () => {
+	  //---implementar if(validaCamposVisibles()){... ---
     cantPasos++;
     actualizaPasosForm();
     actualizaBarrita();
