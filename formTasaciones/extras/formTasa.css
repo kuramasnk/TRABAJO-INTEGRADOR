@@ -66,3 +66,8 @@ input:hover+.radio-tile {
 input:checked+.radio-tile ion-icon, input:checked+.radio-tile label {
   color: white;
 }
+
+
+.container-wizard {
+  min-height: calc(100vh - 165.238px);
+}
