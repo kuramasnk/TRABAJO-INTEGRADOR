@@ -5,21 +5,19 @@ body {
 
 .encabezado {
   width: 100%;
-  height:900px;
+  height: 900px;
   background-image: url(https://i.postimg.cc/1zZhxgXZ/principal.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   position: relative;
   overflow: hidden;
-  color:white;
+  color: white;
   text-align: center;
 }
 
 .encabezado .textos {
   margin-top: 252px;
-
-  
 }
 
 .encabezado .titulo {
@@ -35,12 +33,12 @@ body {
   text-shadow: black 5px 2px 15px;
 }
 
-.container-titulo{
+.container-titulo {
   padding: 15px;
-
+  background-color: rgba(183, 182, 182, 0.732);
 }
 
-.container-titulo h1{
+.container-titulo h1 {
   padding: 25px;
   margin: 35px;
   text-align: center;
@@ -48,30 +46,28 @@ body {
   font-weight: bold;
 }
 
-.container-titulo p{
-margin: 110px;
-text-align: center;
-font-size: 25px;
-
+.container-titulo p {
+  margin: 110px;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
 }
 
 .container-gallery {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  
+  background-color: rgba(183, 182, 182, 0.732);
 }
 
-.gallery{
+.gallery {
   width: 1650px;
   height: 60vmin;
   display: flex;
   gap: 5px;
-  
 }
 
-.gallery img{
+.gallery img {
   height: 100%;
   flex: 1;
   object-fit: cover;
@@ -81,22 +77,35 @@ font-size: 25px;
   border-radius: 15px;
 }
 
-.gallery img:hover{
+.gallery img:hover {
   flex: 4;
 }
+.texto_quienessomos h1{
+  font-weight: bold;
+}
 
-.presentacion{
+.texto_quienessomos {
+  background-color: rgba(183, 182, 182, 0.732);
+
+  text-align: center;
+  padding: 35px;
+}
+
+.texto_quienessomos p {
+  text-align: center;
+  font-size: 35px;
+}
+.presentacion {
   background-color: #f1f1f1;
   padding: 5px;
 }
-.presentacion h1{
-align-items: center;
-text-align: center;
-font-size: 35px;
-padding: 95px;
-font-weight: bold;
+.presentacion h1 {
+  align-items: center;
+  text-align: center;
+  font-size: 35px;
+  padding: 95px;
+  font-weight: bold;
 }
-
 
 .container-social {
   background-color: #f1f1f1;
@@ -105,14 +114,12 @@ font-weight: bold;
   justify-content: center;
 }
 
-
 .card-container {
   margin: 17px;
   width: 300px;
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
-
 
 .grupo {
   display: flex;
@@ -135,7 +142,6 @@ font-weight: bold;
   margin-top: 0;
   font-size: 24px;
   font-weight: bold;
-  
 }
 
 .grupo h4 {
@@ -143,7 +149,6 @@ font-weight: bold;
   font-size: 18px;
   font-weight: normal;
 }
-
 
 .descripcion {
   padding: 10px;
@@ -158,7 +163,6 @@ font-weight: bold;
   line-height: 1.5;
 }
 
-
 .network {
   margin-top: 10px;
   text-align: center;
@@ -170,38 +174,35 @@ font-weight: bold;
   margin-right: 10px;
   color: #6a7ebd;
   padding: 10px;
-  border-radius:5px;
+  border-radius: 5px;
 }
 
-
-.comentariofinal h1{
-font-weight: bold;
-padding: 155px;
+.comentariofinal h1 {
+  text-align: center;
+  font-weight: bold;
+  padding: 155px;
 }
-
 
 @media (max-width: 767px) {
-
-  .container-social{
-max-width: 250px;
+  .container-social {
+    max-width: 250px;
   }
   .card-container {
     margin: 10px;
-    
   }
 
   .grupo img {
     max-width: 150px;
   }
-  
+
   .grupo h2 {
     font-size: 20px;
   }
-  
+
   .grupo h4 {
     font-size: 16px;
   }
-  
+
   .descripcion p {
     font-size: 14px;
   }
