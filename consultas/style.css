@@ -1,156 +1,229 @@
 /* ---------------------------------------------footer------------------------------------------------------- */
 .piedepagina {
-    width: 100%;
-    background-color: #52555b
-    
+  width: 100%;
+  background-color: #52555b;
 }
 
 .piedepagina .grupo1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 15px 0px;
- 
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 15px 0px;
 }
 
 .piedepagina .grupo1 .box figure {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0px;  
-    padding-left: 10px;  
-  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 50px;
 }
 
 .piedepagina .grupo1 .box figure img {
-    display: flex;
-    width: 300px;
+  display: flex;
+  width: 300px;
 }
-.piedepagina .grupo1  .box h4 {
-    color: #fdfdfd;
-    margin-bottom: 15px;
-    margin-top: 10px;
-    font-size: 18px;
-    text-align: center;
-    font-weight:500;
-
+.piedepagina .grupo1 .box h4 {
+  color: #fdfdfd;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
 }
-.piedepagina .grupo1 .box .enlaces a{
-    color: #fdfdfd;
-    margin-bottom: 2px;
-    display:flex;
-    padding-left: 50px;
-    font-size: 14px;
-
+.piedepagina .grupo1 .box .enlaces {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.piedepagina .grupo1 .box .enlaces a {
+  color: #fdfdfd;
+  margin-bottom: 2px;
+  font-size: 14px;
+  text-align: center;
 }
 .piedepagina .grupo1 .box .redsocial {
-    display: flex;
-    justify-content: center;
-    
+  display: flex;
+  justify-content: center;
 }
 .piedepagina .grupo1 .box .redsocial a {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fdfdfd;
-    margin-right: 10px;
-    background-color: #687fcb;
-    text-align: center ;
-    
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fdfdfd;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 25px;
 }
 .piedepagina .grupo2 {
-    background-color: #232327;
-    padding: 15px 10 px;
-    justify-content: center;
-    color: #fff;
-    display: flex;
+  background-color: #232327;
+  padding: 15px 10 px;
+  justify-content: center;
+  color: #fff;
+  display: flex;
 }
 .piedepagina .grupo2 {
-    font-size: 15px;
+  font-size: 15px;
 }
-@media screen and (max-width: 800px){
-    .piedepagina .grupo1 {
-        width: 90%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-
-    
-    }
+@media screen and (max-width: 800px) {
+  .piedepagina .grupo1 {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
 }
 .responsive {
-    max-width: 100%;
-    height: auto;
-  }
+  max-width: 100%;
+  height: auto;
+}
+
+
 /*-------------------------------- pagina contacto------------------------------------------------------------ */
 
 .contacto1 {
-    background-color: #f7f5f5;
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50 px;
-    padding: 80px 0px;
-    
+  background-color: #cac9c9;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50 px;
+  padding: 80px 0px;
+  min-height: calc(100vh - 165.238px);
 }
 .caja1 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  margin-left: 10px;
+}
+.contactoformulario {
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  min-height: 90%;
 }
 .caja2 {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    background-color: #fff; 
-
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #fff;  */
+  padding-left: 20px;
+  padding-right: 20px;
+  border: solid #687fcb;
+  border-radius: 15px;
+  padding-top: 30px;
+  background-color: #e6e6e6;
 }
 .caja2 h4 {
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.caja2 .obligatorios {
+  color: red;
+  text-align: right;
+}
+.caja2 ul {
+  list-style: none; /* sacar viñetas input */
+  width: 100%;
+  padding-left: 0%;
+}
+.lista {
+  list-style-type: none;
+}
+.contactoformulario input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.submit {
+  position: relative;
+  background-color: #687fcb;
+  border: none;
+  font-size: 19px;
+  color: #ffffff;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.lista {
-    list-style-type: none;
+.submit:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
 }
-.contacto2 input {
-    width:90% ;
-    margin-bottom: 10px;
+
+.submit:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+.centrarboton {
+  display: flex;
+  justify-content: center;
+}
+
+.caja3 {
+  justify-content: center;
+  display: flex;
 }
 #map {
-	height: 350px;
-	width: 90%;
+  min-height: 350px;
+  width: 90%;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: solid #687fcb;
+  border-radius: 15px;
 }
 
-@media screen and (max-width: 800px){
-    .contacto1 {
-        width: 90%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-
-    
-    }
+@media screen and (max-width: 800px) {
+  .contacto1 {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
 }
+@media screen and (min-width: 2100px) {
+  .contacto1 {
+    font-size: 200%;
+  }
+
+  .caja2 h4 {
+    font-size: 150%;
+  }
+}
+
 /* -----------------------------------------header------------------------------------------------------------------- */
 
 /* ********** RESET STYLES *********** */
 body {
-    font-family: "Raleway", sans-serif;
-  }
-  
- 
+  font-family: "Raleway", sans-serif;
+}
