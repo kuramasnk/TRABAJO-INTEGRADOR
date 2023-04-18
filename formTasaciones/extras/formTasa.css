@@ -2,6 +2,13 @@
   --primary-color: #07afd9;
 }
 
+form {
+  background-color: #f2e0cb;
+  border-color: #6a7dbd ;
+  border-style: outset ;
+  padding: 1.2rem;
+}
+
 
 .row .form-step{
     display: none;
@@ -11,7 +18,9 @@
     display: flex;
 }
 
-
+.radio-tile{
+  background-color: #F5F5DC;
+}
 .input-container {
   position: relative;
   height: 7rem;
