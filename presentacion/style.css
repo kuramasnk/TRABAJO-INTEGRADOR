@@ -78,7 +78,7 @@ body {
 }
 
 .gallery img:hover {
-  flex: 4;
+  flex: 2;
 }
 .texto_quienessomos h1{
   font-weight: bold;
@@ -184,8 +184,14 @@ body {
 }
 
 @media (max-width: 767px) {
-  .container-social {
-    max-width: 250px;
+  
+  .encabezado .titulo {
+    font-size: 35px;
+  
+  }
+  .encabezado .subtitulo{
+    font-size: 25px;
+
   }
   .card-container {
     margin: 10px;
@@ -205,5 +211,8 @@ body {
 
   .descripcion p {
     font-size: 14px;
+  }
+  .container-gallery {
+   display: none;
   }
 }
