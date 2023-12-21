@@ -55,12 +55,15 @@ body {
 
 .container-gallery {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: rgba(183, 182, 182, 0.732);
 }
 
 .gallery {
+  display: flex;
+  flex-wrap: wrap;
   width: 1650px;
   height: 60vmin;
   display: flex;
@@ -68,6 +71,8 @@ body {
 }
 
 .gallery img {
+  display: flex;
+  flex-wrap: wrap;
   height: 100%;
   flex: 1;
   object-fit: cover;
